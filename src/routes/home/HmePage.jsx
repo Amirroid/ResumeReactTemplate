@@ -6,6 +6,8 @@ import Header from "../../components/layouts/home/Header";
 import AppLayout from "../../components/layouts/app/AppLayout";
 import ProjectsSection from "../../components/sections/Projects";
 import Spacer from "../../components/spacer/Spacer";
+import TechStacksSection from "../../components/sections/TechStacksSections"
+
 export default function HomePage() {
   return (
     <AppLayout>
@@ -21,6 +23,7 @@ export default function HomePage() {
 
       <SkillsMarque />
       <ProjectsSection />
+      <TechStacksSection />
       <Spacer height={10} />
     </AppLayout>
   );

@@ -5,7 +5,7 @@ export default function ProjectItem({ project }) {
     const [visible, setVisible] = useState(false);
 
     return (
-        <ObserveEnterExit onEnter={() => setVisible(true)} onExit={() => setVisible(false)}>
+        <ObserveEnterExit onEnter={() => setVisible(true)} onExit={() => setVisible(false)} threshold={.2}>
             <img
                 src={project.image}
                 alt={project.title}
