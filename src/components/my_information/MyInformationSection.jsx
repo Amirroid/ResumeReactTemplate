@@ -27,7 +27,7 @@ export default function MyInformationSection() {
     }, []);
 
     return (
-        <div className="flex flex-row justify-between mt-12 px-horizontal">
+        <div className="flex flex-row justify-between mt-12 px-horizontal md:px-horizontal-md">
             <div className="max-w-[45%]">
                 <h1
                     ref={headingRef}
@@ -41,7 +41,7 @@ export default function MyInformationSection() {
                 >
                     The user is an Android developer proficient in Jetpack Compose and MVVM architecture. They are also engaged in projects related to Ktor, image processing, and game development.
                 </p>
-                <Spacer height={1.5} />
+                <Spacer height={1.7} />
                 <PrimaryButton>Let's Talk</PrimaryButton>
             </div>
         </div>

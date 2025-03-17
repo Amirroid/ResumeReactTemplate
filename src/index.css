@@ -14,9 +14,8 @@
     }
 
     .scrollbar::-webkit-scrollbar-thumb {
-        background: #D5F60F !important;
+        background: hsl(69, 93%, 50%) !important;
         border-radius: 10px;
-        filter: drop-shadow(0px 0px 5px rgba(213, 246, 15, 0.7));
         transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out;
         opacity: 0;
     }
@@ -25,12 +24,24 @@
         opacity: 1;
     }
 
-    .scrollbar-hidden::-webkit-scrollbar-thumb {
-        opacity: 0;
+    .scrollbar-hidden {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
+
+    .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+    }
+
 
     .scrollbar::-webkit-scrollbar-thumb:hover {
         background: #C0E30D !important;
         filter: drop-shadow(0px 0px 8px rgba(192, 227, 13, 0.9));
+    }
+}
+
+@layer base {
+    html {
+        font-family: 'Istok Web', cursive;
     }
 }

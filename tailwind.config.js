@@ -2,9 +2,10 @@ export default {
   content: ["./index.html", "./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      padding: {
+      spacing: {
         "vertical": "2rem",
-        "horizontal": "8rem",
+        "horizontal": "2rem",
+        "horizontal-md": "8rem",
       },
       colors: {
         primary: "#d5f60f",
@@ -17,6 +18,9 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(calc(-51.5%))" },
         },
+      },
+      fontFamily: {
+        "Istok Web": ["Istok Web", "sans-serif"],
       },
     },
   },
