@@ -15,7 +15,7 @@ export default function Header({ currentPage, onClickContactMe, onMenuClick }) {
             </SecondaryButton>
           </div>
         </div>
-        <div className="w-full md:w-auto flex justify-center mt-2 md:mt-0">
+        <div className="w-full md:w-auto flex  mt-4 md:mt-0">
           <Menu menuItems={menuItems} enabledItem={currentPage} onMenuClick={onMenuClick} />
         </div>
         <div className="hidden md:flex-1 md:flex md:justify-end">

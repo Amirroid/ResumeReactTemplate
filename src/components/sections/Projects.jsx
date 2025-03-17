@@ -7,16 +7,19 @@ export default function ProjectsSection() {
             id: 1,
             title: "KtorAdmin",
             image: "images/bg.jpg",
+            link: "https://github.com/Amirroid/KtorAdmin",
         },
         {
             id: 2,
             title: "KtorAdmin",
             image: "images/bg.jpg",
+            link: "https://github.com/Amirroid/KtorAdmin",
         },
         {
             id: 3,
             title: "KtorAdmin",
             image: "images/bg.jpg",
+            link: "https://github.com/Amirroid/KtorAdmin",
         },
     ]
     return (
