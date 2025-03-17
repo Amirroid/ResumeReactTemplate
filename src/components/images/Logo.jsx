@@ -1,6 +1,6 @@
 
 export default function Logo() {
     return (
-        <h2 className="text-lg font-bold">Amirreza Gholami</h2>
+        <h2 className="text-xl font-bold">Amirreza Gholami</h2>
     )
 }

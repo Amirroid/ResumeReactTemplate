@@ -10,13 +10,13 @@ export default function HomePage() {
   return (
     <AppLayout>
       <div className="relative min-h-screen">
-        <Header />
         <BackDropImage />
         <div className="absolute top-0 justify-center items-center w-full h-full pointer-events-none md:block hidden">
           <MyImage />
         </div>
 
         <MyInformationSection />
+        <Header />
       </div>
 
       <SkillsMarque />
