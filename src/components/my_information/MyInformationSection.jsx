@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import PrimaryButton from "../buttons/PrimaryButton";
+import Spacer from "../spacer/Spacer";
 
 export default function MyInformationSection() {
     const headingRef = useRef(null);
@@ -25,7 +27,7 @@ export default function MyInformationSection() {
     }, []);
 
     return (
-        <div className="flex flex-row justify-between mt-12">
+        <div className="flex flex-row justify-between mt-12 px-horizontal">
             <div className="max-w-[45%]">
                 <h1
                     ref={headingRef}
@@ -39,6 +41,8 @@ export default function MyInformationSection() {
                 >
                     The user is an Android developer proficient in Jetpack Compose and MVVM architecture. They are also engaged in projects related to Ktor, image processing, and game development.
                 </p>
+                <Spacer height={1.5} />
+                <PrimaryButton>Let's Talk</PrimaryButton>
             </div>
         </div>
     );
