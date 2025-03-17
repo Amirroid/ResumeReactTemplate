@@ -20,11 +20,8 @@ export default function VerticalScrollLayout({ children }) {
     // }, []);
 
     return (
-        <div
-            id="scroll-container"
-            // className={`overflow-y-auto scrollbar w-full overflow-x-hidden h-screen ${isScrolling ? "scrollbar-visible" : "scrollbar-hidden"}`}
-            className={`overflow-y-auto scrollbar w-full overflow-x-hidden min-h-screen scrollbar-hidden`}
-        >
+        // className={`overflow-y-auto scrollbar w-full overflow-x-hidden h-screen ${isScrolling ? "scrollbar-visible" : "scrollbar-hidden"}`}
+        <div className="scrollbar-hidden w-full min-h-screen overflow-y-auto">
             {children}
         </div>
     );

@@ -27,7 +27,7 @@ export default function MyInformationSection() {
     }, []);
 
     return (
-        <div className="flex flex-row justify-between mt-12 px-horizontal md:px-horizontal-md">
+        <div className="flex md:flex-row flex-col justify-between mt-12 px-horizontal md:px-horizontal-md">
             <div className="max-w-[45%]">
                 <h1
                     ref={headingRef}
@@ -42,6 +42,12 @@ export default function MyInformationSection() {
                     I am an Android developer specializing in Jetpack Compose and MVVM, MVI architecture. I also develop open-source libraries in Kotlin to optimize and streamline software development.                </p>
                 <Spacer height={1.7} />
                 <PrimaryButton>Let's Talk</PrimaryButton>
+            </div>
+            <div className="space-y-4">
+                <div className="flex flex-col items-center justify-center">
+                    <h2 className="text-7xl font-bold"><span className="text-primary">+</span>4</h2>
+                    <p className="text-sm font-light">Years of Experience</p>
+                </div>
             </div>
         </div>
     );

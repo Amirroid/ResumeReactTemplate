@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react"
 
-export default function ObserveEnterExit({ children, onExit, onEnter, threshold = 0.5 }) {
+export default function ObserveEnterExit({ children, onExit, onEnter = null, threshold = 0.5 }) {
     const ref = useRef(null)
 
     useEffect(() => {

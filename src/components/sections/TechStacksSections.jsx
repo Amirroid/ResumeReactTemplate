@@ -29,6 +29,18 @@ export default function TechStacksSections() {
             percentage: 80,
         },
         {
+            id: 10,
+            title: "Git",
+            image: "images/git.png",
+            percentage: 80,
+        },
+        {
+            id: 20,
+            title: "Python",
+            image: "images/python.webp",
+            percentage: 80,
+        },
+        {
             id: 12,
             title: "CSS",
             image: "images/css.png",
@@ -53,7 +65,7 @@ export default function TechStacksSections() {
             percentage: 60,
         },
         {
-            id: 3,
+            id: 18,
             title: "Java",
             image: "images/java.png",
             percentage: 60,
@@ -76,12 +88,6 @@ export default function TechStacksSections() {
             image: "images/redis.webp",
             percentage: 50,
         },
-        {
-            id: 10,
-            title: "Git",
-            image: "images/git.png",
-            percentage: 50,
-        },
     ];
 
 
@@ -92,7 +98,9 @@ export default function TechStacksSections() {
                 <h1 className="text-5xl font-bold">Tech Stacks</h1>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full mt-12">
                     {stacks.map((stack) => (
-                        <TechStackItem stack={stack} />
+                        <div key={stack.id}>
+                            <TechStackItem stack={stack} />
+                        </div>
                     ))}
                 </div>
             </div>

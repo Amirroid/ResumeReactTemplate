@@ -25,7 +25,9 @@ export default function ProjectsSection() {
                 <h1 className="text-5xl font-bold">Projects</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mt-12">
                     {projects.map((project) => (
-                        <ProjectItem project={project} />
+                        <div key={project.id}>
+                            <ProjectItem project={project} />
+                        </div>
                     ))}
                 </div>
             </div>

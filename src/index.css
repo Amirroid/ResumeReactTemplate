@@ -23,15 +23,15 @@
     .scrollbar-visible::-webkit-scrollbar-thumb {
         opacity: 1;
     }
-
     .scrollbar-hidden {
+        overflow-y: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
-
+    
     .scrollbar-hidden::-webkit-scrollbar {
         display: none;
-    }
+    }    
 
 
     .scrollbar::-webkit-scrollbar-thumb:hover {
