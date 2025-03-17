@@ -1,6 +1,6 @@
 # ResumeReactTemplate
 
-A simple **resume template** built with **React**, **Vite**, and **Tailwind CSS**. It's a responsive and customizable template for creating an online resume.
+A simple **resume template** built with **React**, **Vite**, and **Tailwind CSS**.
 
 ## Live Demo
 Check out the live demo here:  
