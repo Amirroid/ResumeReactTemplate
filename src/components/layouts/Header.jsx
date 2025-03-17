@@ -1,6 +1,6 @@
-import SecondaryButton from "../../buttons/SecondaryButton";
-import Logo from "../../images/Logo";
-import Menu from "../../menu/Menu";
+import SecondaryButton from "../buttons/SecondaryButton";
+import Logo from "../images/Logo";
+import Menu from "../menu/Menu";
 
 export default function Header() {
   const menuItems = ["Home", "Projects", "Tech Stacks"];

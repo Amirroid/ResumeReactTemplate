@@ -39,8 +39,7 @@ export default function MyInformationSection() {
                     className="text-sm font-light mt-4 break-words whitespace-normal"
                     style={{ width: textWidth, wordWrap: "break-word" }}
                 >
-                    The user is an Android developer proficient in Jetpack Compose and MVVM architecture. They are also engaged in projects related to Ktor, image processing, and game development.
-                </p>
+                    I am an Android developer specializing in Jetpack Compose and MVVM, MVI architecture. I also develop open-source libraries in Kotlin to optimize and streamline software development.                </p>
                 <Spacer height={1.7} />
                 <PrimaryButton>Let's Talk</PrimaryButton>
             </div>

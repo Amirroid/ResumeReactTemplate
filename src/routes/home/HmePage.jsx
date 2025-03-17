@@ -2,11 +2,11 @@ import BackDropImage from "../../components/images/BackDropImage";
 import MyInformationSection from "../../components/my_information/MyInformationSection";
 import MyImage from "../../components/images/MyImage";
 import SkillsMarque from "../../components/anim/SkillsMarque";
-import Header from "../../components/layouts/home/Header";
+import Header from "../../components/layouts/Header";
 import AppLayout from "../../components/layouts/app/AppLayout";
 import ProjectsSection from "../../components/sections/Projects";
-import Spacer from "../../components/spacer/Spacer";
 import TechStacksSection from "../../components/sections/TechStacksSections"
+import Footer from "../../components/layouts/Footer";
 
 export default function HomePage() {
   return (
@@ -24,7 +24,7 @@ export default function HomePage() {
       <SkillsMarque />
       <ProjectsSection />
       <TechStacksSection />
-      <Spacer height={10} />
+      <Footer />
     </AppLayout>
   );
 }
