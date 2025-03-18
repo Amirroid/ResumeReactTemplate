@@ -6,7 +6,7 @@ export default function MyImage() {
             <img
                 src="images/me.png"
                 alt="my-image"
-                className="w-auto h-[87%] object-cover bottom-0 absolute"
+                className="w-auto h-[87%] object-cover bottom-0 absolute select-none"
             />
         </div>
     );

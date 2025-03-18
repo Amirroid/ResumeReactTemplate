@@ -3,7 +3,7 @@ export default {
   theme: {
     extend: {
       spacing: {
-        "vertical": "2rem",
+        "vertical": "1.5rem",
         "horizontal": "2rem",
         "horizontal-md": "8rem",
       },
