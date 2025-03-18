@@ -1,8 +1,11 @@
 
 import HorizontalPadding from "../padding/HorizontalPadding"
 import TechStackItem from "./TechStackItem"
+import TranslationContext from "../../context/TranslationContext"
+import { useContext } from "react"
 
 export default function TechStacksSections() {
+    const { t } = useContext(TranslationContext);
     const stacks = [
         {
             id: 1,
@@ -95,7 +98,7 @@ export default function TechStacksSections() {
     return (
         <HorizontalPadding>
             <div className="flex flex-col mt-36 gap-4 items-center">
-                <h1 className="text-5xl font-bold">Tech Stacks</h1>
+                <h1 className="text-5xl font-bold">{t('tech_stacks_section')}</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 w-full mt-12">
                     {stacks.map((stack) => (
                         <div key={stack.id}>

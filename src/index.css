@@ -41,7 +41,10 @@
 }
 
 @layer base {
-    html {
+    html[lang="en"] {
         font-family: 'Istok Web', cursive;
+    }
+    html[lang="fa"] {
+        font-family: 'Vazirmatn', cursive;
     }
 }

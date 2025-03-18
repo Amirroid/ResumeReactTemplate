@@ -21,6 +21,7 @@ export default {
       },
       fontFamily: {
         "Istok Web": ["Istok Web", "sans-serif"],
+        "Vazirmatn": ["Vazirmatn", "sans-serif"],
       },
     },
   },

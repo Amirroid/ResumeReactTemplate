@@ -1,10 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import PrimaryButton from "../buttons/PrimaryButton";
 import Spacer from "../spacer/Spacer";
+import useAnimate from "../../hooks/useAnimate";
+import TranslationContext from "../../context/TranslationContext";
 
 export default function MyInformationSection({ onTalkClick }) {
     const headingRef = useRef(null);
     const [textWidth, setTextWidth] = useState("auto");
+    const { t, i18n } = useContext(TranslationContext);
 
     useEffect(() => {
         const updateWidth = () => {
@@ -27,28 +30,43 @@ export default function MyInformationSection({ onTalkClick }) {
     }, []);
 
     return (
-        <div className="flex md:flex-row flex-col md:h-auto h-[75vh] justify-between mt-12 px-horizontal md:px-horizontal-md">
-            <div className="max-w-[45%]">
+        <div className="flex md:flex-row flex-col md:h-auto h-[65vh] justify-between mt-12 px-horizontal md:px-horizontal-md">
+            <div className="max-w-[40%]">
                 <h1
                     ref={headingRef}
-                    className="text-7xl font-bold leading-[4.3rem] w-fit break-words whitespace-normal tracking-wider"
+                    className={`text-7xl font-bold leading-[4.3rem] w-fit break-words whitespace-pre-line ${i18n.language === 'en' && 'tracking-wider'}`}
                 >
-                    Amirreza Gholami,
+                    {t('name')}
                 </h1>
+
                 <p
                     className="text-sm font-light mt-4 break-words whitespace-normal"
                     style={{ width: textWidth, wordWrap: "break-word" }}
                 >
-                    I am an Android developer specializing in Jetpack Compose and MVVM, MVI architecture. I also develop open-source libraries in Kotlin to optimize and streamline software development.                </p>
+                    {t('intrduction')}
+                </p>
                 <Spacer height={1.7} />
-                <PrimaryButton onClick={onTalkClick}>Let's Talk</PrimaryButton>
+                <PrimaryButton onClick={onTalkClick}>{t('lets_talk')}</PrimaryButton>
             </div>
             <div className="space-y-4">
-                <div className="flex flex-col md:items-center items-end justify-center">
-                    <h2 className="text-7xl font-bold"><span className="text-primary">+</span>4</h2>
-                    <p className="text-sm font-light">Years of Experience</p>
-                </div>
+                <ExperienceItem title="4" description={t('years_of_experience')} />
             </div>
+        </div>
+    );
+}
+
+function ExperienceItem({ title, description }) {
+    const [displayedTitle, setDisplayedTitle] = useAnimate({ value: 0 });
+    useEffect(() => {
+        setTimeout(() => {
+            setDisplayedTitle(title);
+        }, 1000);
+    }, [title]);
+
+    return (
+        <div className="flex flex-col md:items-center items-end justify-center rotate-[10deg]">
+            <h2 className="text-7xl font-bold"><span className="text-primary">+</span>{parseInt(displayedTitle).toFixed(0)}</h2>
+            <p className="text-sm font-light">{description}</p>
         </div>
     );
 }
