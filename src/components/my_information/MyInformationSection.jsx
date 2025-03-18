@@ -8,6 +8,7 @@ export default function MyInformationSection({ onTalkClick }) {
     const headingRef = useRef(null);
     const [textWidth, setTextWidth] = useState("auto");
     const { t, i18n } = useContext(TranslationContext);
+    const isEnglish = i18n.language === 'en';
 
     useEffect(() => {
         const updateWidth = () => {
@@ -34,7 +35,7 @@ export default function MyInformationSection({ onTalkClick }) {
             <div className="max-w-[40%]">
                 <h1
                     ref={headingRef}
-                    className={`text-7xl font-bold leading-[4.3rem] w-fit break-words whitespace-pre-line ${i18n.language === 'en' && 'tracking-wider'}`}
+                    className={`text-7xl font-bold leading-[4.3rem] w-fit break-words whitespace-pre-line ${isEnglish && 'tracking-wider'}`}
                 >
                     {t('name')}
                 </h1>
@@ -49,13 +50,13 @@ export default function MyInformationSection({ onTalkClick }) {
                 <PrimaryButton onClick={onTalkClick}>{t('lets_talk')}</PrimaryButton>
             </div>
             <div className="space-y-4">
-                <ExperienceItem title="4" description={t('years_of_experience')} />
+                <ExperienceItem title="4" description={t('years_of_experience')} isEnglish={isEnglish} />
             </div>
         </div>
     );
 }
 
-function ExperienceItem({ title, description }) {
+function ExperienceItem({ title, description, isEnglish }) {
     const [displayedTitle, setDisplayedTitle] = useAnimate({ value: 0 });
     useEffect(() => {
         setTimeout(() => {
@@ -64,7 +65,10 @@ function ExperienceItem({ title, description }) {
     }, [title]);
 
     return (
-        <div className="flex flex-col md:items-center items-end justify-center rotate-[10deg]">
+        <div
+            className={`flex flex-col ${isEnglish ? 'items-end' : 'items-start'} justify-center`}
+            style={{ transform: `rotate(${isEnglish ? '10deg' : '-10deg'})` }}
+        >
             <h2 className="text-7xl font-bold"><span className="text-primary">+</span>{parseInt(displayedTitle).toFixed(0)}</h2>
             <p className="text-sm font-light">{description}</p>
         </div>

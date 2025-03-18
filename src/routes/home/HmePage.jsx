@@ -58,6 +58,8 @@ export default function HomePage() {
       })
       if (maxEntry) {
         setCurrentPage(maxEntry.target.id.replace("-", " "));
+      } else {
+        setCurrentPage(null)
       }
     }, { threshold: .01 })
     sectionRefs.forEach((ref) => {
@@ -71,6 +73,7 @@ export default function HomePage() {
 
   return (
     <AppLayout>
+
       <div ref={homeRef} id="Home">
         <div className="relative min-h-screen">
           <BackDropImage />

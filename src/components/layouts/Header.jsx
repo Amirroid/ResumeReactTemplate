@@ -3,15 +3,14 @@ import Logo from "../images/Logo";
 import Menu from "../menu/Menu";
 import TranslationContext from "../../context/TranslationContext";
 import { useContext } from "react";
+import ChangeThemeContext from "../../context/ChangeThemeContext";
 
 export default function Header({ currentPage, onMenuClick }) {
-  const { t, i18n } = useContext(TranslationContext);
+  const { t, _ } = useContext(TranslationContext);
+  const onChangeTheme = useContext(ChangeThemeContext);
   const menuItems = [t("home_section"), t("projects_section"), t("tech_stacks_section")];
   const toggleLanguage = () => {
-    const newLang = i18n.language === "fa" ? "en" : "fa";
-    i18n.changeLanguage(newLang).then(() => {
-      console.log("Language changed to:", i18n.language);
-    });
+    onChangeTheme();
   };
   return (
     <div className="px-horizontal md:px-horizontal-md py-vertical fixed top-0 transition-all delay-200 left-0 right-0 z-50 backdrop-blur-lg shadow-md bg-[rgba(0,0,0,0.8)]">
