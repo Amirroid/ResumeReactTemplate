@@ -6,7 +6,7 @@
   "homepage": "https://amirroid.github.io/ResumeReactTemplate",
   "scripts": {
     "dev": "vite",
-    "start": "vite",
+    "start": "npm install && npm run build && npm install -g serve && serve -s dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
