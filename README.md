@@ -32,18 +32,5 @@ $ npm install
 $ npm run dev
 ```
 
----
-
-## 📌 Build and Deploy
-
-To build and deploy the project to **GitHub Pages**:
-
-```bash
-# 1️⃣ Build the project
-$ npm run build
-
-# 2️⃣ Deploy to GitHub Pages
-$ npm run deploy
-```
 
 🎉 Enjoy customizing your resume!
