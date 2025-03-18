@@ -78,7 +78,7 @@ export default function HomePage() {
             <MyImage />
           </div>
 
-          <MyInformationSection />
+          <MyInformationSection onTalkClick={onClickContactMe} />
           <Header currentPage={currentPage} onClickContactMe={onClickContactMe} onMenuClick={onMenuClick} />
         </div>
       </div>

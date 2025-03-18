@@ -21,6 +21,12 @@ export default function ProjectsSection() {
             image: "images/bg.jpg",
             link: "https://github.com/Amirroid/KtorAdmin",
         },
+        {
+            id: 4,
+            title: "KtorAdmin",
+            image: "images/bg.jpg",
+            link: "https://github.com/Amirroid/KtorAdmin",
+        },
     ]
     return (
         <HorizontalPadding>

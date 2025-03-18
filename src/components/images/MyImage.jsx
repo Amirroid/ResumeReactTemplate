@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 export default function MyImage() {
     return (
         <div className="w-full min-h-screen h-full flex justify-center items-center overflow-hidden">

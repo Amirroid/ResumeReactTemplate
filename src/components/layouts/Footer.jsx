@@ -5,7 +5,7 @@ import { forwardRef } from "react";
 
 const Footer = forwardRef((_, ref) => {
     return (
-        <div className="w-full flex justify-center items-center flex-col gap-2 mt-36" ref={ref}>
+        <div className="w-full flex justify-center items-center flex-col gap-2 pt-36 h-screen" ref={ref}>
             <h1 className="text-6xl font-black text-center">Let's Collaborate</h1>
             <Spacer height={1} />
             <div className="flex flex-row gap-2">

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import PrimaryButton from "../buttons/PrimaryButton";
 import Spacer from "../spacer/Spacer";
 
-export default function MyInformationSection() {
+export default function MyInformationSection({ onTalkClick }) {
     const headingRef = useRef(null);
     const [textWidth, setTextWidth] = useState("auto");
 
@@ -41,7 +41,7 @@ export default function MyInformationSection() {
                 >
                     I am an Android developer specializing in Jetpack Compose and MVVM, MVI architecture. I also develop open-source libraries in Kotlin to optimize and streamline software development.                </p>
                 <Spacer height={1.7} />
-                <PrimaryButton>Let's Talk</PrimaryButton>
+                <PrimaryButton onClick={onTalkClick}>Let's Talk</PrimaryButton>
             </div>
             <div className="space-y-4">
                 <div className="flex flex-col md:items-center items-end justify-center">
