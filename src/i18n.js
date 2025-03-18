@@ -8,7 +8,7 @@ i18n.use(HttpApi).use(LanguageDetector).use(initReactI18next).init({
   fallbackLng: "en",
   debug: true,
   backend: {
-    loadPath: `${import.meta.env.BASE_URL}/locales/{{lng}}/{{ns}}.json`
+    loadPath: `locales/{{lng}}/{{ns}}.json`
   },
   interpolation: {
     escapeValue: false,

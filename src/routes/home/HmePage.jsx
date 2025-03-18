@@ -58,8 +58,6 @@ export default function HomePage() {
       })
       if (maxEntry) {
         setCurrentPage(maxEntry.target.id.replace("-", " "));
-      } else {
-        setCurrentPage(null)
       }
     }, { threshold: .01 })
     sectionRefs.forEach((ref) => {

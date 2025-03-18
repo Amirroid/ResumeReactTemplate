@@ -2,30 +2,48 @@
 
 A simple **resume template** built with **React**, **Vite**, and **Tailwind CSS**.
 
-## Live Demo
+## 🚀 Live Demo
 Check out the live demo here:  
-[https://amirroid.github.io/ResumeReactTemplate/](https://amirroid.github.io/ResumeReactTemplate/)
+🔗 [https://www.amirroid.ir/](https://www.amirroid.ir/)
 
-## Setup
+---
 
-1. Clone the repository:  
-   `git clone https://github.com/amirroid/ResumeReactTemplate.git`
+## 🎨 Design Inspiration
+This template is inspired by the following design:  
+🔗 [Daniasyrofi Personal Portfolio Landing Page](https://dribbble.com/shots/21428580-Daniasyrofi-Personal-Portfolio-Landing-Page)
 
-2. Install dependencies:  
-   `cd ResumeReactTemplate`  
-   `npm install`
+---
 
-3. Run the development server:  
-   `npm run dev`
+## 📦 Setup
 
-## Build and Deploy
+Follow these steps to set up the project:
 
-To build and deploy to GitHub Pages:
+```bash
+# 1️⃣ Clone the repository
+$ git clone https://github.com/amirroid/ResumeReactTemplate.git
 
-1. Build the project:  
-   `npm run build`
+# 2️⃣ Navigate into the project directory
+$ cd ResumeReactTemplate
 
-2. Deploy to GitHub Pages:  
-   `npm run deploy`
+# 3️⃣ Install dependencies
+$ npm install
 
-Enjoy customizing your resume!
+# 4️⃣ Run the development server
+$ npm run dev
+```
+
+---
+
+## 📌 Build and Deploy
+
+To build and deploy the project to **GitHub Pages**:
+
+```bash
+# 1️⃣ Build the project
+$ npm run build
+
+# 2️⃣ Deploy to GitHub Pages
+$ npm run deploy
+```
+
+🎉 Enjoy customizing your resume!
